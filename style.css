@@ -236,4 +236,5 @@ body{
     height: 30px;
     border-radius: 50%;
     border: 7px solid #2d2f41;
+    z-index: 999;
 }
