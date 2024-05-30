@@ -27,6 +27,26 @@ body{
     box-shadow: 0px 5px 25px rgba(14, 21, 37, 0.8);
 }
 
+.analog-clock:before{
+    z-index: 000;
+    content: "Clock";
+    position: absolute;
+    color: #cee0f6;
+    font-size: 6.5em;
+    font-weight: 700;
+    opacity: 0.07;
+}
+
+.analog-clock:after{
+    content: "Analogic";
+    position: absolute;
+    color: #cee0f6;
+    font-size: 1.2em;
+    font-weight: 300;
+    opacity: 0.12;
+    transform: translate(140px, 55px);
+}
+
 .analog-clock ul{
     list-style: none;
 }
@@ -181,8 +201,6 @@ body{
 .hr-hand{
     width: 12px;
     height: 280px;
-    transform: rotate(240deg);
-
 }
 
 .hr-hand::before{
@@ -199,8 +217,6 @@ body{
 .min-hand{
     width: 8px;
     height: 320px;
-    transform: rotate(30deg);
-
 }
 
 .min-hand::before{
@@ -216,7 +232,6 @@ body{
 .sec-hand{
     width: 5px;
     height: 335px;
-    transform: rotate(90deg);
 }
 
 .sec-hand::before{
@@ -230,11 +245,11 @@ body{
 }
 
 .center-dot{
+    z-index: 999;
     position: absolute;
     background: #cee0f6;
     width: 30px;
     height: 30px;
     border-radius: 50%;
     border: 7px solid #2d2f41;
-    z-index: 999;
 }
