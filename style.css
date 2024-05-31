@@ -253,3 +253,104 @@ body{
     border-radius: 50%;
     border: 7px solid #2d2f41;
 }
+
+.toggle-btn{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    margin-bottom: 50px;
+}
+
+.toggle-btn button{
+    font-size: 1.5em;
+    font-weight: 600;
+    height: 40px;
+    width: fit-content;
+    color: #cee0f6;
+    background: #2d2f41;
+    border: solid 2px #ffb960;
+    border-radius: 15px;
+    transition: all 0.5s ease;
+}
+
+.toggle-btn button:hover{
+    background: #25252d;
+    border-color: #ff5e9a;
+}
+
+.toggle-btn button:active{
+    transform: scale(0.7);
+}
+
+.digital-clock{
+    background: #2d2f41;
+    position: relative;
+    width: 30rem;
+    height: 15rem;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 5px 25px rgba(14, 21, 37, 0.8);
+}
+
+.time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.hours{
+    font-size: 5.5rem;
+    font-weight: 600;
+    color: #ff5e9a;
+    text-shadow: 6px 6px 4px rgba(14, 21, 37, 0.8);
+}
+
+#dots{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 5.5rem;
+    font-weight: 600;
+    text-shadow: 6px 6px 4px rgba(14, 21, 37, 0.8);
+    color: #5fd4ff;
+}
+
+.minutes{
+    font-size: 5.5rem;
+    font-weight: 600;
+    color: #ffb960;
+    text-shadow: 6px 6px 4px rgba(14, 21, 37, 0.8);
+}
+
+.meridian{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffb960;
+    text-shadow: 6px 6px 4px rgba(14, 21, 37, 0.8);
+    padding-left: 3rem;
+    padding-bottom: 1rem;
+}
+
+.seconds{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffb960;
+    text-shadow: 6px 6px 4px rgba(14, 21, 37, 0.8);
+    padding-left: 3rem;
+    padding-top: 1rem;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.invisible{
+    display: none;
+}
