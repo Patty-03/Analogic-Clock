@@ -29,6 +29,12 @@ function setDigitalClock(){
     else
     document.querySelector('.seconds').textContent = seconds;
 
+    if(minutes < 10){
+        document.querySelector('.minutes').textContent = '0' + minutes;
+    }
+    else
+    document.querySelector('.minutes').textContent = minutes;
+
 
     let amPm = document.querySelector('.meridian');
 
